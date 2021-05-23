@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Miguel García WEB/Contacto</title>
+    <link rel="shortcut icon" href="./header img.png" type="image/x-icon">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+              <!-- compatibilidad con Edge-->
+    <meta name="Author" content="José Miguel García Orejudo">
+    <meta name="Description" content=" página web personal donde voy a subir mi progreso en el mundo del desarollo">
+    <meta name="Keywords" content="página personal,java,html,css,javascript,formulario,desarrollo web,dam,">
+    <script src="https://kit.fontawesome.com/e2d8fbe2b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-main">
+            <a href="index.html" class="logo">JM García</a>
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="about.html">Acerca de mí</a>
+                </li>
+                <li>
+                    <a href="manualpro.html">Mis proyectos</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contactame</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <header class="cabecera">
+            <div class="cara">
+                <img src="./header img.png" alt="micara" class="imagenlogo">
+                <div class="overlay">
+                    <div class="text">
+                        <a href="about.html">José Miguel Web</a>
+                    </div>
+                </div>
+            </div>
+            <h1>José Miguel WEB</h1>
+            <p>Bienvenidos a mi página web personal, contactame mediante el siguiente formulario.</p>
+        </header>
+        <main class="principal">
+            <section class="formulario">
+            <form method="post">
+                <h2>Contacta conmigo:</h2>
+			    <section class="Datospersonales">
+				    <fieldset>
+					    <legend>Datos personales</legend>
+            		    <label>Nombre <input type="text" id="fname" name="fname" placeholder="Introduzca su nombre"><br></label>
+            		    <label for="lname">Apellidos </label>
+            		    <input type="text" id="lname" name="lname" placeholder="Introduzca apellido"><br><br>
+					    <label>Fecha<input type="datetime"></label><br><br>
+					    <label>Introduce la url de tu página web<input type="url" placeholder="Introduce la url de tu web"></label>
+					    <br><br>
+					    <label>Introduce tu correo<input type="email"></label>
+					    <br><br>
+                        <hr>
+					    <p>Sexo:</p>
+              		    <label>Hombre
+                	    <input type="radio" name="Sexo" value="genero" id="Sexo_0">
+                	    </label>
+              		    <br>
+              		    <label>Mujer
+                	    <input type="radio" name="Sexo" value="genero" id="Sexo_1"></label>
+              		    <br>
+              		    <label>Otro
+                	    <input type="radio" name="Sexo" value="genero" id="Sexo_2">
+                	    </label>
+              		    <br>
+				    </fieldset>
+			    </section>
+        	    <section class="otrosdatos">
+				    <fieldset>
+		 			    <legend>Otros Datos</legend>
+					    <p>Sobre que quieres hablarme:</p>
+			  		    <label>
+			    	    <input type="checkbox" name="Asignaturas" value="Java" id="Asignaturas_0">
+			    	    Java</label>
+			  		    <br>
+			  		    <label>
+			    	    <input type="checkbox" name="Asignaturas" value="Html" id="Asignaturas_1">
+			    	    Html</label>
+			  		    <br>
+			  		    <label>
+			    	    <input type="checkbox" name="Asignaturas" value="Css" id="Asignaturas_2">
+			    	    Css</label>
+			  		    <br>
+			  		    <label>
+			    	    <input type="checkbox" name="Asignaturas" value="JavaScript" id="Asignaturas_3">
+			    	    JavaScript</label><br>
+                        <br>
+					    <label>Dime en que se puede mejorar<textarea>comenta aquí</textarea></label>
+				    </fieldset>
+			    </section>
+		    <br>  
+			    <label><input type="checkbox">Aceptas las condiciones</label>
+                <input type="submit" value="Submit"><br>
+			    <input type="reset" value="Reset"><br>
+            </form>
+        </section>
+        </main>
+    </div>
+    <footer class="piepagina">
+        <div class="navegacionpiepag">
+            <a href="index.html"><i class="fas fa-house-user"></i></a>
+            <a href="about.html"><i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <hr>
+        <h2>Me puedes seguir en mis redes sociales</h2>
+        <div class="links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <p><i class="far fa-copyright"></i>JoséMiguelGarcíaOrejudo</p>
+        </div>
+        <div>
+            <p><i class="far fa-copyright"></i>JoséMiguelGarcíaOrejudo</p>
+        </div>
+    </footer>
+</body>
+</html>
