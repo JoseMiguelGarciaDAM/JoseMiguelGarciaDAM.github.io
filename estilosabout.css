@@ -1,0 +1,38 @@
+/*ACERCA DE MI ESTILOS*/
+.principalabout{
+    width: 100%;
+    margin: 15px;
+    padding: 20px;
+}
+.bannerabout{
+    width: 100%;
+    height: 35rem;
+    background:url(./imagesfondo.jpg);
+    margin-bottom: 40px;
+    border-style: solid;
+}
+.bannerabout h2{
+    text-align: center;
+    font-size: 30px;
+}
+.bannerabout .contentabout{
+    width:100%;
+    margin: 10px;
+}
+.bannerabout .contentabout{
+    text-align: center;
+}
+.bannerabout .contentabout img{
+    width: 85%;
+    height: 50%;
+    position: absolute;
+}
+.bannerabout .tarjetas{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bannerabout .tarjetas a{
+    color: white;
+}

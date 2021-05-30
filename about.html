@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Miguel García WEB/Acerca de mí</title>
+    <link rel="shortcut icon" href="./header img.png" type="image/x-icon">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link href="estilosabout.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+              <!-- compatibilidad con Edge-->
+    <meta name="Author" content="José Miguel García Orejudo">
+    <meta name="Description" content=" página web personal donde voy a subir mi progreso en el mundo del desarollo">
+    <meta name="Keywords" content="página personal,java,html,css,javascript,formulario,desarrollo web,dam,">
+    <script src="https://kit.fontawesome.com/e2d8fbe2b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-main">
+            <a href="index.html" class="logo"><span>JM</span> García</a>
+            <button onclick="myFunction()" class="btn">Menú</button>
+            <div id="mimenu" class="btnmenu-content">
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="about.html">Acerca de mí</a>
+                </li>
+                <li>
+                    <a href="manualpro.html">Mis proyectos</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contactame</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <hr>
+        <header class="cabecera">
+            <div class="cara">
+                <img src="./header img.png" alt="micara" class="imagenlogo">
+                <div class="overlay">
+                    <div class="text">
+                        <a href="about.html">Acerca de mí</a>
+                    </div>
+                </div>
+            </div>
+            <h1>José Miguel WEB</h1>
+            <p>Mi Curriculum.</p>
+        </header>
+        <main class="principalabout">
+            <section class="bannerabout">
+                <div class="contentabout">
+                    <h2>Formación academica</h2>
+                    <h3>ESO ,IES José Manzano</h3>
+                    <br>
+                    <h3>Bachillerato, IES Donoso Cortés</h3>
+                    <br>
+                    <h3>Desarrollo de Apliciones Multiplataformas, IES Donoso Cortés</h3>
+                    <ul>
+                        <p>Lo que he aprendido:</p>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>HTML5 y CSS3</li>
+                        <li>MySql</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="bannerabout">
+                <h2>Formación adicional</h2>
+                <div class="contentabout">
+                    <ul>
+                        <li>Título de Inglés: B1</li>
+                        <li>Carnet Conducir: Tipo B</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="piepagina">
+        <div class="navegacionpiepag">
+            <a href="index.html"><i class="fas fa-house-user"></i></a>
+            <a href="manualpro.html"><i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <hr>
+        <h2>Me puedes seguir en mis redes sociales</h2>
+        <div class="links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="links">
+            <p><i class="far fa-copyright"></i>JoséMiguelGarcíaOrejudo</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+    document.getElementById("mimenu").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.btn')) {
+      var dropdowns = document.getElementsByClassName("btnmenu-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+    </script>
+    </body>
+</html>

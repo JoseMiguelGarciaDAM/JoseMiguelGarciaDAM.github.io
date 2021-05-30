@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Miguel Garcia WEB/Mis proyectos</title>
+    <link rel="shortcut icon" href="./header img.png" type="image/x-icon">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link href="estilosabout.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+              <!-- compatibilidad con Edge-->
+    <meta name="Author" content="José Miguel García Orejudo">
+    <meta name="Description" content=" página web personal donde voy a subir mi progreso en el mundo del desarollo">
+    <meta name="Keywords" content="página personal,java,html,css,javascript,formulario,desarrollo web,dam,">
+    <script src="https://kit.fontawesome.com/e2d8fbe2b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-main">
+            <a href="index.html" class="logo"><span>JM</span> García</a>
+            <button onclick="myFunction()" class="btn">Menú</button>
+            <div id="mimenu" class="btnmenu-content">
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="about.html">Acerca de mí</a>
+                </li>
+                <li>
+                    <a href="manualpro.html">Mis proyectos</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contactame</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <hr>
+        <header class="cabecera">
+            <div class="cara">
+                <img src="./header img.png" alt="micara" class="imagenlogo">
+                <div class="overlay">
+                    <div class="text">
+                        <a href="about.html">Mis proyectos en Java.</a>
+                    </div>
+                </div>
+            </div>
+            <h1>José Miguel WEB</h1>
+            <p>Aquí teneis todos mis mejores proyectos en Java</p>
+        </header>
+        <main class="principalabout">
+            <section class="bannerabout">
+                <div class="tarjetas">
+                    <div>
+                        <img src="./javaimg.png" alt="imagen de java">
+                        <h3>
+                            TRES EN RAYA.
+                        </h3>
+                        <p>El mítico juego del tres en raya. Realizado en java</p>
+                        <ul>
+                            <hr>
+                            <li>Realizado en Eclipse</li>
+                            <li>Version de Java: 1.8</li>
+                            <li>Autor: José Miguel García Orejudo</li>
+                            <hr>
+                        </ul>
+                        <a href="#">CLICK PARA VERLO</a>
+                    </div>
+                </div>
+            </section>
+            <section class="bannerabout">
+                <div class="tarjetas">
+                    <div>
+                        <img src="./javaimg.png" alt="imagen de java">
+                        <h3>
+                            TRIÁNGULOS.
+                        </h3>
+                        <p>Programa para pintar triángulos. Realizado en java</p>
+                        <p>Incluye pruebas en JUnit4</p>
+                        <ul>
+                            <hr>
+                            <li>Realizado en Eclipse</li>
+                            <li>Version de Java: 1.8</li>
+                            <li>Autor: José Miguel García Orejudo</li>
+                            <hr>
+                        </ul>
+                        <a href="#">CLICK PARA VERLO</a>
+                    </div>
+                </div>
+            </section>
+            <section class="bannerabout">
+                <div class="tarjetas">
+                    <div>
+                        <img src="./javaimg.png" alt="imagen de java">
+                        <h3>
+                            EMPLEADOS Y DEPARTAMENTOS.
+                        </h3>
+                        <p>Mi mejor proyecto. Realizado en java</p>
+                        <ul>
+                            <hr>
+                            <li>Realizado en Eclipse</li>
+                            <li>Version de Java: 1.8</li>
+                            <li>Autor: José Miguel García Orejudo</li>
+                            <hr>
+                        </ul>
+                        <a href="#">CLICK PARA VERLO</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="piepagina">
+        <div class="navegacionpiepag">
+            <a href="index.html"><i class="fas fa-house-user"></i></a>
+            <a href="contact.html"><i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <hr>
+        <h2>Me puedes seguir en mis redes sociales</h2>
+        <div class="links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="links">
+            <p><i class="far fa-copyright"></i>JoséMiguelGarcíaOrejudo</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+    document.getElementById("mimenu").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.btn')) {
+      var dropdowns = document.getElementsByClassName("btnmenu-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+    </script>
+</body>
+</html>

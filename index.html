@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Miguel García WEB</title>
+    <link rel="shortcut icon" href="./header img.png" type="image/x-icon">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link href="estilosabout.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+              <!-- compatibilidad con Edge-->
+    <meta name="Author" content="José Miguel García Orejudo">
+    <meta name="Description" content=" página web personal donde voy a subir mi progreso en el mundo del desarollo">
+    <meta name="Keywords" content="página personal,java,html,css,javascript,formulario,desarrollo web,dam,">
+    <script src="https://kit.fontawesome.com/e2d8fbe2b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-main">
+            <a href="index.html" class="logo"><span>JM</span> García</a>
+            <button onclick="myFunction()" class="btn">Menu</button>
+            <div id="mimenu" class="btnmenu-content">
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="about.html">Acerca de mí</a>
+                </li>
+                <li>
+                    <a href="manualpro.html">Mis proyectos</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contactame</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <hr>
+        <header class="cabecera">
+            <div class="cara">
+                <img src="./header img.png" alt="micara" class="imagenlogo">
+                <div class="overlay">
+                    <div class="text">
+                        <a href="about.html">José Miguel Web</a>
+                    </div>
+                </div>
+            </div>
+            <h1>José Miguel WEB</h1>
+            <p>Bienvenidos a mi página web personal, en esta página vais a ver un poco sobre mis conocimientos en el desarrollo web.</p>
+        </header>
+        <main class="principal">
+        <section class="bannerpagina">
+            <div class="content">
+                <h2>Hola chic@s</h2>
+                <p>Aquí en esta página voy a subir todos mis avances en el mundo del desarrollo web y de aplicaciones multiplataformas</p>
+                <p>Si te interasa en mundo del desarollo web te invito a que visites la web del la W3C School, una página web que esta muy bien para empezar a crear tu propia página web</p>
+                <p>Pincha en el icono para ir a la web de la W3C School</p>
+                <a href="https://www.w3c.es/" target="_blank"><i class="fas fa-angle-double-right"></i></a>
+            </div>
+        </section>
+        <div class="tarjetas">
+            <div>
+                <img src="./javaimg.png" alt="imagen de java">
+                <h3>
+                    Java
+                </h3>
+                <p>Lenguaje orientado a objetos, es el lenguaje que más conozco y domino.</p>
+                <a href="#">Aprende sobre Java</a>
+            </div>
+            <div>
+                <img src="./imghtml.jpg" alt="imgen de html5">
+                <h3>
+                    HTML
+                </h3>
+                <p> HTML5 usado para el desarrollo de esta web.</p>
+                <a href="#">Aprende sobre HTML5</a>
+            </div>
+            <div>
+                <img src="./cssimg.png" alt="imagen de css3">
+                <h3>
+                    Css
+                </h3>
+                <p>CSS3 usado para el desarrollo de esta web.</p>
+                <a href="#">Aprende sobre CSS3</a>
+            </div>
+            <div>
+                <img src="./javasimg.png" alt="imagen de java script">
+                <h3>
+                    JavaScript
+                </h3>
+                <p>Es el que menos domino pero día a día voy ampliando mis conocimientos en este lenguaje que lo está arrasando todo.</p>
+                <a href="#">Aprende sobre JavaScript</a>
+            </div>
+        </div>
+        <section class="segundobannerpagina">
+            <div class="content">
+                <h2>Enlaces de interés</h2>
+                <ul>
+                    <li><a href="https://www.w3c.es/" title="W3C School" target="_blank">W3C School</a></li>
+                    <li><a href="https://www.w3c.es/" title="W3C" target="_blank">W3C</a></li>
+                </ul>
+            </div>
+            <p>Si quieres ver mis proyectos(como esta página web) puedes hacerlo en Mis Proyectos o en mi GitHub<i class="fab fa-github"></i></p>
+        </section>
+    </main>
+    
+    </div>
+    <footer class="piepagina">
+        <div class="navegacionpiepag">
+            <a href="index.html"><i class="fas fa-house-user"></i></a>
+            <a href="about.html"><i class="fas fa-angle-double-right"></i></a>
+        </div>
+        <hr>
+        <h2>Me puedes seguir en mis redes sociales</h2>
+        <div class="links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="links">
+            <p><i class="far fa-copyright"></i>JoséMiguelGarcíaOrejudo</p>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+    document.getElementById("mimenu").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.btn')) {
+      var dropdowns = document.getElementsByClassName("btnmenu-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+    </script>
+</body>
+</html>
